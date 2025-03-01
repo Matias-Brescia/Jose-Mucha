@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Nota: Descripción general de la página para SEO y accesibilidad -->
+    <meta
+      name="description"
+      content="Plataforma de enseñanza de matemáticas y ciencias." />
+
+    <!-- Nota: Palabras clave relevantes para SEO -->
+    <meta name="keywords" content="matemáticas, ciencias, educación" />
+
+    <!-- Nota: Metadatos Open Graph para compartir en redes sociales -->
+    <meta property="og:title" content="Brochure Matemático" />
+    <meta
+      property="og:description"
+      content="Plataforma de enseñanza de matemáticas y ciencias." />
+    <meta property="og:image" content="ruta-de-la-imagen.png" />
+    <meta property="og:url" content="https://tusitio.com" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brochure Matemático</title>
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="reset.css" />
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Font Awesome para íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Nota: Usar "defer" para que el JS se cargue después de parsear el HTML -->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Ajusta el tamaño y posición del logo a tu gusto -->
+      <img id="logo" src="logo-claro.png" alt="Logo de la plataforma" />
+    </header>
+
+    <!-- Botón para cambiar entre tema claro y oscuro -->
+    <button
+      id="theme-toggle"
+      title="Cambiar tema"
+      aria-label="Botón para cambiar tema">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <main class="container">
+      <!-- Sección Inicio -->
+      <section class="slide active" id="inicio">
+        <h1>Bienvenido a Mi Plataforma</h1>
+        <p>Aprende matemáticas de manera simple y efectiva.</p>
+        <div class="video-wrapper">
+          <video
+            id="intro-video"
+            autoplay
+            muted
+            loop
+            aria-describedby="video-desc">
+            <source src="video.mp4" type="video/mp4" />
+            Tu navegador no soporta videos.
+          </video>
+          <!-- Controles personalizados para el video -->
+          <div class="video-controls">
+            <button id="rewind-btn" aria-label="Retroceder 10 segundos">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play-pause-btn" aria-label="Pausar/Reanudar video">
+              <i class="fas fa-pause"></i>
+            </button>
+            <button id="forward-btn" aria-label="Adelantar 10 segundos">
+              <i class="fas fa-forward"></i>
+            </button>
+            <button
+              id="sound-toggle-btn"
+              aria-label="Activar/Desactivar sonido">
+              <i class="fas fa-volume-mute"></i>
+            </button>
+          </div>
+        </div>
+        <p id="video-desc" class="visually-hidden">
+          Video de presentación de la plataforma
+        </p>
+      </section>
+
+      <!-- Sección Servicios -->
+      <section class="slide" id="servicios">
+        <h1>Nuestros Servicios</h1>
+        <p>
+          Mi nombre es José Mucha. Soy Economista de la Universidad del
+          Pacífico, miembro del Instituto de Matemática y Ciencias Afines
+          (YMCA).
+        </p>
+        <p>
+          También soy <strong>tutor apasionado</strong> que enseña
+          <strong>Matemáticas</strong> y <strong>Ciencias</strong> a estudiantes
+          de 6to a 9no grado.
+        </p>
+        <p><small>Clases personalizadas, material de estudio y más.</small></p>
+      </section>
+
+      <!-- Sección Testimonios -->
+      <section class="slide" id="testimonios">
+        <h1>Testimonios</h1>
+        <div class="testimonial-container">
+          <blockquote class="testimonial">
+            <p>"Gracias a esta plataforma, mejoré mis notas en matemáticas."</p>
+            <cite>- Juan Pérez</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Explicaciones claras y fáciles de entender."</p>
+            <cite>- María González</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Sección Contacto y Redes Sociales -->
+      <section class="slide" id="contacto-redes">
+        <h1>Contacto</h1>
+        <p>Déjanos tu nombre y correo, y te responderemos.</p>
+        <form id="contact-form" class="form-container">
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu nombre"
+            required
+            autocomplete="name" />
+
+          <label for="email">Correo:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Tu correo"
+            required
+            autocomplete="email" />
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Sección de Redes Sociales -->
+        <div class="social-section">
+          <h2>Nuestras Redes</h2>
+          <div class="social-links">
+            <a
+              href="https://www.tiktok.com/@corpeduca1"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok">
+              <i class="fab fa-tiktok"></i> Corpeduca1
+            </a>
+            <a
+              href="https://www.instagram.com/grupo_estudioa1"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram">
+              <i class="fab fa-instagram"></i> grupo_estudioa1
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100082929741857"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook">
+              <i class="fab fa-facebook"></i> Grupo A1
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B51943626440"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i> Grupo A1
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Botones de navegación entre slides -->
+      <nav>
+        <button class="nav-button left" aria-label="Sección anterior">⬅</button>
+        <button class="nav-button right" aria-label="Sección siguiente">
+          ➡
+        </button>
+      </nav>
+
+      <!-- Barra de progreso para indicar el avance en los slides -->
+      <div class="progress-container">
+        <div id="progress-bar"></div>
+      </div>
+
+      <!-- Indicadores de navegación (opcional) -->
+      <div class="indicators"></div>
+    </main>
+  </body>
+</html>
