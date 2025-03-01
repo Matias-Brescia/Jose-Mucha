@@ -1,0 +1,39 @@
+/* reset.css */
+/* Reinicio de márgenes, paddings y box-sizing para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuente base y mejoras de visualización para el body */
+body {
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Eliminar estilos por defecto en listas y enlaces */
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ajustes para imágenes y videos */
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Botones sin estilos predeterminados */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
