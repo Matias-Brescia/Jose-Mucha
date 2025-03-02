@@ -2,189 +2,164 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <!-- Nota: Descripción general de la página para SEO y accesibilidad -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Plataforma de enseñanza de matemáticas y ciencias." />
-
-    <!-- Nota: Palabras clave relevantes para SEO -->
-    <meta name="keywords" content="matemáticas, ciencias, educación" />
-
-    <!-- Nota: Metadatos Open Graph para compartir en redes sociales -->
-    <meta property="og:title" content="Brochure Matemático" />
-    <meta
-      property="og:description"
-      content="Plataforma de enseñanza de matemáticas y ciencias." />
-    <meta property="og:image" content="ruta-de-la-imagen.png" />
-    <meta property="og:url" content="https://tusitio.com" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brochure Matemático</title>
-
-    <!-- Reset CSS -->
-    <link rel="stylesheet" href="reset.css" />
-
-    <!-- Estilos personalizados -->
+      content="Sitio Educativo - Rompe Barreras, Conoce al Director, Educación y Contacto" />
+    <title>Mi Sitio Educativo</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Font Awesome para íconos -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
-      rel="stylesheet" />
-
-    <!-- Nota: Usar "defer" para que el JS se cargue después de parsear el HTML -->
-    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
-      <!-- Ajusta el tamaño y posición del logo a tu gusto -->
-      <img id="logo" src="logo-claro.png" alt="Logo de la plataforma" />
+      <h1>Mi Sitio Educativo</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#about">Director y Miembro</a></li>
+          <li><a href="#education">Educación</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Botón para cambiar entre tema claro y oscuro -->
-    <button
-      id="theme-toggle"
-      title="Cambiar tema"
-      aria-label="Botón para cambiar tema">
-      <i class="fas fa-moon"></i>
-    </button>
-
-    <main class="container">
-      <!-- Sección Inicio -->
-      <section class="slide active" id="inicio">
-        <h1>Bienvenido a Mi Plataforma</h1>
-        <p>Aprende matemáticas de manera simple y efectiva.</p>
-        <div class="video-wrapper">
-          <video
-            id="intro-video"
-            autoplay
-            muted
-            loop
-            aria-describedby="video-desc">
-            <source src="video.mp4" type="video/mp4" />
-            Tu navegador no soporta videos.
-          </video>
-          <!-- Controles personalizados para el video -->
-          <div class="video-controls">
-            <button id="rewind-btn" aria-label="Retroceder 10 segundos">
-              <i class="fas fa-backward"></i>
-            </button>
-            <button id="play-pause-btn" aria-label="Pausar/Reanudar video">
-              <i class="fas fa-pause"></i>
-            </button>
-            <button id="forward-btn" aria-label="Adelantar 10 segundos">
-              <i class="fas fa-forward"></i>
-            </button>
-            <button
-              id="sound-toggle-btn"
-              aria-label="Activar/Desactivar sonido">
-              <i class="fas fa-volume-mute"></i>
-            </button>
-          </div>
-        </div>
-        <p id="video-desc" class="visually-hidden">
-          Video de presentación de la plataforma
+    <main>
+      <!-- Sección 1: Inicio -->
+      <section id="inicio">
+        <h2>¿Listo Para Romper Barreras?</h2>
+        <p>
+          Nacimos por la necesidad de poder enseñar de una manera muy práctica y
+          precisa en grupos de máximo 5 personas.
         </p>
       </section>
 
-      <!-- Sección Servicios -->
-      <section class="slide" id="servicios">
-        <h1>Nuestros Servicios</h1>
+      <!-- Sección 2: Director y Miembro -->
+      <section id="about">
+        <h2>Director y Miembro</h2>
         <p>
-          Mi nombre es José Mucha. Soy Economista de la Universidad del
-          Pacífico, miembro del Instituto de Matemática y Ciencias Afines
-          (YMCA).
+          Mi nombre es José Mucha. Economista de la Universidad del Pacífico y
+          miembro del Instituto de matemática y ciencias afines (YMCA).
         </p>
         <p>
-          También soy <strong>tutor apasionado</strong> que enseña
-          <strong>Matemáticas</strong> y <strong>Ciencias</strong> a estudiantes
-          de 6to a 9no grado.
+          También soy un <strong>tutor apasionado</strong> que enseña
+          <strong>Math</strong> y <strong>Science</strong> a middler school (de
+          6th a 9th grade).
         </p>
-        <p><small>Clases personalizadas, material de estudio y más.</small></p>
       </section>
 
-      <!-- Sección Testimonios -->
-      <section class="slide" id="testimonios">
-        <h1>Testimonios</h1>
-        <div class="testimonial-container">
-          <blockquote class="testimonial">
-            <p>"Gracias a esta plataforma, mejoré mis notas en matemáticas."</p>
-            <cite>- Juan Pérez</cite>
-          </blockquote>
-          <blockquote class="testimonial">
-            <p>"Explicaciones claras y fáciles de entender."</p>
-            <cite>- María González</cite>
-          </blockquote>
+      <!-- Sección 3: Educación -->
+      <section id="education">
+        <h2>Educación</h2>
+        <div class="grid-container">
+          <!-- Colegio -->
+          <article class="card">
+            <h3>Colegio</h3>
+            <div class="nested-grid">
+              <!-- Sistema Nacional -->
+              <div class="card-item">
+                <h4>Sistema Nacional</h4>
+                <p><strong>Niveles:</strong> 6 de Primaria a 5 de Secundaria</p>
+                <p>
+                  <strong>Cursos:</strong> Matemática, Ciencias, Lenguaje<br />
+                  <em>(máximo 5 alumnos por sección)</em>
+                </p>
+              </div>
+              <!-- Sistema Internacional -->
+              <div class="card-item">
+                <h4>Sistema Internacional</h4>
+                <p><strong>Niveles:</strong> 6th to 10th Grade</p>
+                <p>
+                  <strong>Cursos:</strong> Math Standard and Extended, Physics,
+                  Chemistry
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- IB -->
+          <article class="card">
+            <h3>IB</h3>
+            <p>Español e Inglés 1 año y 2 años</p>
+            <p>IB Biology HL- SL YEARS 1 AND 2</p>
+            <p>IB CHEMISTRY HL - SL YEARS 1 AND 2</p>
+            <p>IB PHYSICS HL - SL YEARS 1 AND 2</p>
+            <p>IB MATH HL - SL YEARS 1 AND 2</p>
+            <p>ECONOMICS</p>
+            <p>Y MUCHOS MÁS...</p>
+          </article>
+
+          <!-- Preparación Pre, Universitaria -->
+          <article class="card">
+            <h3>Preparación Pre, Universitaria</h3>
+            <p>Universidad de Lima</p>
+            <p>Pacifico</p>
+            <p>Catolica</p>
+            <p>Universidad Ricardo Palma</p>
+            <p>Cayetano Heredia</p>
+          </article>
         </div>
       </section>
 
-      <!-- Sección Contacto y Redes Sociales -->
-      <section class="slide" id="contacto-redes">
-        <h1>Contacto</h1>
-        <p>Déjanos tu nombre y correo, y te responderemos.</p>
-        <form action="https://formsubmit.co/tucorreo@gmail.com" method="POST">
-          <input type="text" name="nombre" placeholder="Tu Nombre" required />
-          <input type="email" name="email" placeholder="Tu Correo" required />
-          <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-
-        <!-- Sección de Redes Sociales -->
-        <div class="social-section">
-          <h2>Nuestras Redes</h2>
-          <div class="social-links">
-            <a
-              href="https://www.tiktok.com/@corpeduca1"
-              target="_blank"
-              rel="noopener"
-              aria-label="TikTok">
-              <i class="fab fa-tiktok"></i> Corpeduca1
-            </a>
-            <a
-              href="https://www.instagram.com/grupo_estudioa1"
-              target="_blank"
-              rel="noopener"
-              aria-label="Instagram">
-              <i class="fab fa-instagram"></i> grupo_estudioa1
-            </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100082929741857"
-              target="_blank"
-              rel="noopener"
-              aria-label="Facebook">
-              <i class="fab fa-facebook"></i> Grupo A1
-            </a>
-            <a
-              href="https://api.whatsapp.com/send/?phone=%2B51943626440"
-              target="_blank"
-              rel="noopener"
-              aria-label="WhatsApp">
-              <i class="fab fa-whatsapp"></i> Grupo A1
-            </a>
+      <!-- Sección 4: Contacto y Redes Sociales -->
+      <section id="contact">
+        <h2>Contacto y Redes Sociales</h2>
+        <div class="contact-container">
+          <form class="contacto" action="#" method="post">
+            <div class="form-group">
+              <label for="nombre"><strong>Nombre:</strong></label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre"
+                required />
+            </div>
+            <div class="form-group">
+              <label for="correo"><strong>Correo:</strong></label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="Tu correo"
+                required />
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+          <div class="redes">
+            <h3>Redes Sociales</h3>
+            <ul>
+              <li>
+                <a href="https://www.tiktok.com" target="_blank" rel="noopener"
+                  >TikTok</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener"
+                  >Facebook</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/1234567890"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </section>
-
-      <!-- Botones de navegación entre slides -->
-      <nav>
-        <button class="nav-button left" aria-label="Sección anterior">⬅</button>
-        <button class="nav-button right" aria-label="Sección siguiente">
-          ➡
-        </button>
-      </nav>
-
-      <!-- Barra de progreso para indicar el avance en los slides -->
-      <div class="progress-container">
-        <div id="progress-bar"></div>
-      </div>
-
-      <!-- Indicadores de navegación (opcional) -->
-      <div class="indicators"></div>
     </main>
   </body>
 </html>
